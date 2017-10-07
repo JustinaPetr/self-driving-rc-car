@@ -30,10 +30,9 @@ __-__ Screwdrivers.
 
 Once I got all the tools, I checked if my car actually works as it should. I plugged in the batteries (my car needed five 1.5V AA batteries and one 9V battery for a controller) and tested it out.
 
-![img1][image1]
 
 <p align="center">
-  <img width="460" height="300" src="./images/img1.jpg">
+  <img width="460" height="400" src="./images/img1.jpg">
 </p>
 
 Once I was sure that everything works as it should I was ready to start hacking. My goal was change how the car is controlled – instead of me pushing the forward, back, left and right buttons on the controller I wanted to execute these commands programmatically. The easiest way to achieve this is to hack the controller and simulate button presses with Arduino. The first step to achieve this was to investigate how the controller is set up from the inside. After I unscrewed the plastic cover this is how the controlled looked like from the inside:
@@ -67,4 +66,6 @@ It’s time to connect all things together! The key is to plug the wires, which 
 
 Once it’s done all is left to do is to power the Arduino (for now I chose to power it with my computer so I plugged it back to my PC), turn the power on for a controller and see the car coming to life! And here it is – an RC car which behaviour can be controlled with code!😊
 
-![car_works][image7]
+<p align="center">
+  <img src="./images/car_works.gif">
+</p>
