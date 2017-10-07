@@ -37,8 +37,12 @@ Once I got all the tools, I checked if my car actually works as it should. I plu
 
 Once I was sure that everything works as it should I was ready to start hacking. My goal was change how the car is controlled – instead of me pushing the forward, back, left and right buttons on the controller I wanted to execute these commands programmatically. The easiest way to achieve this is to hack the controller and simulate button presses with Arduino. The first step to achieve this was to investigate how the controller is set up from the inside. After I unscrewed the plastic cover this is how the controlled looked like from the inside:
 
-![img2][image2]
-![img3][image3]
+<p align="center">
+  <img width="460" height="400" src="./images/img2.jpg">
+</p>
+<p align="center">
+  <img width="460" height="400" src="./images/img3.jpg">
+</p>
 There are four pins which get activated once I press the buttons on the controller (forward, back, left or right). Once any of these buttons are pressed a signal is being sent to a microcontroller through circuit lines. It is also a good idea to unscrew the screws which are holding the board attached to the case and look at wire connections. There two main connections – the battery and radio antenna. If preferred, the power supply can be changed by reattaching positive and negative wires to a different battery or power supply (for now I chose to keep it as it is). At this stage it’s also a good idea to use a multimeter and check the voltage of the pins on the board (especially if you would like to make changes in how the power is supplied).
 
 
@@ -46,11 +50,15 @@ There are four pins which get activated once I press the buttons on the controll
 
 In order to connect circuit board and Arduino I needed to solder four wires onto the circuit board (for each of the buttons). Unfortunately, my circuit board didn’t have free solder pins for this so I decided to solder the wires directly onto the circuit lines (it’s a bit less elegant way of doing that, but works as intended). To do that I scraped (very carefully!!!) the thin layer of plastic on each of the circuit lines connecting the buttons and microcontroller. 
 
-![img4][image4]
+<p align="center">
+  <img width="460" height="400" src="./images/img4.jpg">
+</p>
 
 Once the surfaces were ready I soldered four wires directly onto the scraped areas (it’s quite a neat thing to do, because the circuit lines are thin so it’s best not to rush). I used the wires which had a male connection on one end to make it easy to connect them to Arduino. Once soldered, I used a multimeter to check if all wires were soldered successfully. This is how the result of soldering looked like:
 
-![img5][image5]
+<p align="center">
+  <img width="460" height="400" src="./images/img5.jpg">
+</p>
 
 If you have never done soldering before I would encourage you to look up some tutorials on how to do it on Youtube or the web. In fact, it’s not that complicated as it looks like, just be careful and don’t burn your fingers! This project was my first attempt to solder things as well and I still remember that proud moment when I pulled it off 😊 
 
@@ -62,7 +70,9 @@ Time to code! The easiest way to code the Arduino is to use and IDE which can be
 
 It’s time to connect all things together! The key is to plug the wires, which were soldered to forward, back, left and right circuit lines, to corresponding pins of Arduino. In my code I initialised digital pins as follows: forward(13), backward(12), left(9) and right (8). This suggest that I should connect the wire which was connected to forward circuit line to the Arduino pin number 1, backward wire to the pin number 12 and so on.
 
-![img6][image6]
+<p align="center">
+  <img width="460" height="400" src="./images/img6.jpg">
+</p>
 
 Once it’s done all is left to do is to power the Arduino (for now I chose to power it with my computer so I plugged it back to my PC), turn the power on for a controller and see the car coming to life! And here it is – an RC car which behaviour can be controlled with code!😊
 
