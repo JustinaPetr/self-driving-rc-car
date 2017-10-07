@@ -41,7 +41,7 @@ Once I was sure that everything works as it should I was ready to start hacking.
   <img width="460" height="400" src="./images/img2.jpg">
 </p>
 <p align="center">
-  <img width="460" height="400" src="./images/img3.jpg">
+  <img width="460" height="700" src="./images/img3.jpg">
 </p>
 There are four pins which get activated once I press the buttons on the controller (forward, back, left or right). Once any of these buttons are pressed a signal is being sent to a microcontroller through circuit lines. It is also a good idea to unscrew the screws which are holding the board attached to the case and look at wire connections. There two main connections – the battery and radio antenna. If preferred, the power supply can be changed by reattaching positive and negative wires to a different battery or power supply (for now I chose to keep it as it is). At this stage it’s also a good idea to use a multimeter and check the voltage of the pins on the board (especially if you would like to make changes in how the power is supplied).
 
