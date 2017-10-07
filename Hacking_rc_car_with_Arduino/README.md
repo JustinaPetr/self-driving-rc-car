@@ -38,7 +38,7 @@ Once I got all the tools, I checked if my car actually works as it should. I plu
 Once I was sure that everything works as it should I was ready to start hacking. My goal was change how the car is controlled – instead of me pushing the forward, back, left and right buttons on the controller I wanted to execute these commands programmatically. The easiest way to achieve this is to hack the controller and simulate button presses with Arduino. The first step to achieve this was to investigate how the controller is set up from the inside. After I unscrewed the plastic cover this is how the controlled looked like from the inside:
 
 <p align="center">
-  <img width="460" height="600" src="./images/img2.jpg">
+  <img width="460" height="500" src="./images/img2.jpg">
 </p>
 <p align="center">
   <img width="380" height="600" src="./images/img3.jpg">
