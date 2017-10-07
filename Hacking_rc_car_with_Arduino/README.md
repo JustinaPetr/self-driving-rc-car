@@ -71,7 +71,7 @@ Time to code! The easiest way to code the Arduino is to use and IDE which can be
 It’s time to connect all things together! The key is to plug the wires, which were soldered to forward, back, left and right circuit lines, to corresponding pins of Arduino. In my code I initialised digital pins as follows: forward(13), backward(12), left(9) and right (8). This suggest that I should connect the wire which was connected to forward circuit line to the Arduino pin number 1, backward wire to the pin number 12 and so on.
 
 <p align="center">
-  <img width="460" height="400" src="./images/img6.jpg">
+  <img width="560" height="400" src="./images/img6.jpg">
 </p>
 
 Once it’s done all is left to do is to power the Arduino (for now I chose to power it with my computer so I plugged it back to my PC), turn the power on for a controller and see the car coming to life! And here it is – an RC car which behaviour can be controlled with code!😊
