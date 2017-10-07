@@ -57,7 +57,7 @@ In order to connect circuit board and Arduino I needed to solder four wires onto
 Once the surfaces were ready I soldered four wires directly onto the scraped areas (it’s quite a neat thing to do, because the circuit lines are thin so it’s best not to rush). I used the wires which had a male connection on one end to make it easy to connect them to Arduino. Once soldered, I used a multimeter to check if all wires were soldered successfully. This is how the result of soldering looked like:
 
 <p align="center">
-  <img width="500" height="500" src="./images/img5.jpg">
+  <img width="500" height="400" src="./images/img5.jpg">
 </p>
 
 If you have never done soldering before I would encourage you to look up some tutorials on how to do it on Youtube or the web. In fact, it’s not that complicated as it looks like, just be careful and don’t burn your fingers! This project was my first attempt to solder things as well and I still remember that proud moment when I pulled it off 😊 
