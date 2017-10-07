@@ -51,7 +51,7 @@ There are four pins which get activated once I press the buttons on the controll
 In order to connect circuit board and Arduino I needed to solder four wires onto the circuit board (for each of the buttons). Unfortunately, my circuit board didn’t have free solder pins for this so I decided to solder the wires directly onto the circuit lines (it’s a bit less elegant way of doing that, but works as intended). To do that I scraped (very carefully!!!) the thin layer of plastic on each of the circuit lines connecting the buttons and microcontroller. 
 
 <p align="center">
-  <img width="560" height="380" src="./images/img4.jpg">
+  <img width="660" height="380" src="./images/img4.jpg">
 </p>
 
 Once the surfaces were ready I soldered four wires directly onto the scraped areas (it’s quite a neat thing to do, because the circuit lines are thin so it’s best not to rush). I used the wires which had a male connection on one end to make it easy to connect them to Arduino. Once soldered, I used a multimeter to check if all wires were soldered successfully. This is how the result of soldering looked like:
