@@ -10,7 +10,7 @@ __1.__ Hacking RC car with Arduino.
 
 __2.__ Teaching a car to “see” the environment, avoid obstacles and follow the lines.
 
-__3.__ Third stage is going to be a fun application of self-driving RC cars, but before I solve some challenges related to it, I will keep this part secret 😊
+__3.__ Third stage is going to be a fun application of self-driving RC cars, but before I solve some challenges related to it, I will keep this part secret. 😊
 
-It is an ongoing project and I will constantly be updating this repository up till it all will be finished.  [Here](./Hacking_rc_car_with_Arduino/) is a first stage of the project - a step-by-step process of how I hacked the RC car and a simple Arduino code to get this started. 
+It is an ongoing project and I will constantly be updating this repository up till it all will be finished.  [Here](./Hacking_rc_car_with_Arduino/) is the first stage of the project - a step-by-step process of how I hacked the RC car and a simple Arduino code to get this started. 
 
