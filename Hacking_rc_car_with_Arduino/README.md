@@ -57,7 +57,7 @@ Once the surfaces were ready I soldered four wires directly onto the scraped are
   <img width="500" height="400" src="./images/img5.jpg">
 </p>
 
-If you have never done soldering before I would encourage you to look up some tutorials on how to do it on Youtube or the web. In fact, it’s not that complicated as it looks like, just be careful and don’t burn your fingers! Before this project, I have never done any soldering, but I found it very exciting and I couldn't be more proud of myself when connections actually worked! :D
+If you have never done soldering before I would encourage you to look up some tutorials on how to do it on Youtube or the web. In fact, it’s not that complicated as it looks like, just be careful and don’t burn your fingers! Before this project, I have never done any soldering, but I found it very exciting and I couldn't be more proud of myself when connections actually worked! 😊
 
 ## Step 3: Coding the Arduino
 
