@@ -16,7 +16,7 @@ __-__ An RC car. Any type of RC car should do the job, but it’s probably not w
 
 __-__ Arduino Uno and a connection cable. Arduino is a microcontroller which is going to be used to programmatically control the car. 
 
-__-__ Multimeter. A multimeter is an electronic measuring instrument which is going to be used to the check polarity of pins on the circuit board as well as to check if created connections are working.
+__-__ Multimeter. A multimeter is an electronic measuring instrument which is going to be used to check polarity of pins on the circuit board as well as to check if created connections are working.
 
 __-__ Soldering iron and solder wire. They will be needed to attach necessary wires to the circuit board.
 
@@ -35,7 +35,7 @@ Once I got all the tools, I checked if my car actually works as expected. I plug
   <img width="460" height="400" src="./images/img1.jpg">
 </p>
 
-Once I was sure that everything works as it should, I was ready to start hacking. My goal was to change how the car is controlled – instead of me pushing the forward, backward, left and right buttons on the controller I wanted to execute these commands programmatically. The easiest way to achieve this is to hack the controller and simulate button presses with Arduino. The first step to achieve this was to investigate how the controller is set up from the inside. After I unscrewed the plastic cover of the controller, this is what I found inside:
+Once I was sure that everything works as it should, I was ready to start hacking. My goal was to change how the car is controlled – instead of me pushing the forward, backward, left and right buttons on the controller I wanted to execute these commands programmatically. The easiest way to achieve this is to hack the controller and simulate button presses with Arduino. The first step to achieve this was to investigate how the controller is set up from the inside. After I removed the plastic cover of the controller, this is what I found inside:
 
 <p align="center">
   <img width="500" height="550" src="./images/img2.jpg"/><img width="330" height="550" src="./images/img3.jpg"/>
@@ -61,17 +61,17 @@ If you have never done soldering before I would encourage you to look up some tu
 
 ## Step 3: Coding the Arduino
 
-Time to code! The easiest way to code the Arduino is to use an IDE which can be downloaded from Arduino official website https://www.arduino.cc/en/Main/Software. Once installed, plug the Arduino to your computer and open the IDE. Place a zip code of BasicLibrary-master library in ```Arduino/libraries``` folder on your machine and load it by navigating to ```Sketch -> Include Library -> Add .ZIP Library..``` on Arduino IDE. Once it’s done, paste the sample code provided in ```rc_car.ino``` file. The code itself is very simple. First I initialised four DigitalPins (for going forward, backward, left and right) and assigned each of them the number of which Arduino pin it will correspond to. The second part of the code is a very simple loop which makes the car move forward, stop for a second, go backward-right and stop for a second again. It’s going to be enough for testing and I also have to get more comfortable with using C++ to write more complicated code. Once the code is written all is left to do is to verify that the code executes without any errors and upload it to Arduino.
+Time to code! The easiest way to code the Arduino is to use an IDE which can be downloaded from Arduino official website https://www.arduino.cc/en/Main/Software. Once installed, plug the Arduino to your computer and open the IDE. Place a zip file called BasicLibrary-master in ```Arduino/libraries``` folder on your machine and load it by navigating to ```Sketch -> Include Library -> Add .ZIP Library..``` on Arduino IDE. Once it’s done, load the sample code provided in ```rc_car.ino``` file. The code itself is very simple. First I initialised four DigitalPins (for going forward, backward, left and right) and for each of them I assigned the number of which Arduino pin it will correspond to. The second part of the code is a very simple loop which makes the car move forward, stop for a second, go backward-right and stop for a second again. It’s going to be enough for testing and I also have to get more comfortable with using C++ to write more complicated code. Once the code is written all what is left to do is to verify that the code executes without any errors and upload it to Arduino.
 
 ## Step 4: Connecting it all together: a Robo-Ferrari comes to life!
 
-It’s time to connect all things together! The key is to plug the wires, which were soldered to forward, backward, left and right circuit lines, to corresponding pins on Arduino. In my code, I initialised digital pins as follows: forward(13), backward(12), left(9) and right (8). This suggests that I should connect the wire which was connected to forward circuit line to the Arduino pin number 13, backward wire to the pin number 12 and so on.
+It’s time to connect all things together! The key is to plug the wires, which were soldered to forward, backward, left and right circuit lines, to corresponding pins on Arduino. In my code, I initialised digital pins as follows: forward(13), backward(12), left(9) and right (8). This suggests that the wire which was connected to forward circuit line has to be connected to the Arduino pin number 13, backward wire to the pin number 12 and so on.
 
 <p align="center">
   <img width="660" height="380" src="./images/img6.jpg">
 </p>
 
-Once it’s done all is left to do is to power the Arduino (for now I chose to power it with my computer so I plugged it back to my PC), turn the power on for a controller and see the car coming to life! And here it is – an RC car which is controlled by code!😊
+Once it’s done all that is left to do is to power the Arduino (for now I chose to power it with my computer so I plugged it back to my PC), turn the power on for a controller and see the car coming to life! And here it is – an RC car which is controlled by code!😊
 
 <p align="center">
   <img src="./images/car_works.gif">
