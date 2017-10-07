@@ -30,12 +30,12 @@ __-__ Screwdrivers.
 
 Once I got all the tools, I checked if my car actually works as it should. I plugged in the batteries (my car needed five 1.5V AA batteries and one 9V battery for a controller) and tested it out.
 
-![img1][image1]
+![img1][image1]{:height="50%" width="50%"}
 
 Once I was sure that everything works as it should I was ready to start hacking. My goal was change how the car is controlled – instead of me pushing the forward, back, left and right buttons on the controller I wanted to execute these commands programmatically. The easiest way to achieve this is to hack the controller and simulate button presses with Arduino. The first step to achieve this was to investigate how the controller is set up from the inside. After I unscrewed the plastic cover this is how the controlled looked like from the inside:
 
-![img2][image2]
-![img3][image3]
+![img2][image2]{:height="50%" width="50%"}
+![img3][image3]{:height="50%" width="50%"}
 There are four pins which get activated once I press the buttons on the controller (forward, back, left or right). Once any of these buttons are pressed a signal is being sent to a microcontroller through circuit lines. It is also a good idea to unscrew the screws which are holding the board attached to the case and look at wire connections. There two main connections – the battery and radio antenna. If preferred, the power supply can be changed by reattaching positive and negative wires to a different battery or power supply (for now I chose to keep it as it is). At this stage it’s also a good idea to use a multimeter and check the voltage of the pins on the board (especially if you would like to make changes in how the power is supplied).
 
 
